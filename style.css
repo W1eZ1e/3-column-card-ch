@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap');
+
+:root{
+    /* Primary */
+
+    --Bright-orange: hsl(31, 77%, 52%);
+    --Dark-cyan: hsl(184, 100%, 22%);
+    --Very-dark-cyan: hsl(179, 100%, 13%);
+
+    /* Neutral */
+
+    --T-white: hsla(0, 0%, 100%, 0.75);
+    --Very-light-gray: hsl(0, 0%, 95%);
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: var(--Very-light-gray);
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 15px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.cards{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 12%;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+#icons{
+    width: 64px;
+    height: 40px;
+    margin-bottom: 20px;
+}
+
+.container{
+    width: 270px;
+    display: flex;
+    flex-direction: column;
+    color: var(--Very-light-gray);
+}
+.container h1{
+    margin-bottom: 20px;
+    font-size: 34px;
+    font-family: 'Big Shoulders Display', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.container p{
+    color: var(--T-white);
+    margin-bottom: 65px;
+    line-height: 22px;
+    font-size: 13px;
+}
+.bttn{
+    background-color: var(--Very-light-gray);
+    color: var(--Bright-orange);
+    line-height: 30px;
+    padding: 5px 28px;
+    border-radius: 20px;
+    border: none;
+    margin-bottom: 15px;
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 600;
+    
+}
+.right-b{
+    color: var(--Very-dark-cyan);
+}
+.mid-b{
+    color: var(--Dark-cyan);
+}
+
+#orange{
+    background-color: var(--Bright-orange);
+    padding: 32px;
+}
+#cyan{
+    background-color: var(--Dark-cyan);
+    padding: 32px;
+}
+#green{
+    background-color: var(--Very-dark-cyan);
+    padding: 32px;
+}
+
+.bttn:hover{
+    cursor: pointer;
+    color: var(--Very-light-gray);
+    background: transparent;
+    border: 2px solid var(--Very-light-gray);
+}
+
+.attribution { 
+    font-size: 11px;
+    text-align: center;
+    margin-top: 20px;
+}
+.attribution a {
+    color: hsl(228, 45%, 44%); 
+    text-decoration: none;
+}
+
+@media (max-width:580px){
+    .cards{
+        flex-direction: column;
+    }
+}
